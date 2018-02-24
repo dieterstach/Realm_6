@@ -2,11 +2,18 @@ body {
   font-family: Helvetica;
   font-weight: lighter;
   text-align: center;
+  background-color: gray;
 }
 
-#header{
+#top{
   padding-top: 200px;
-  background-color: gold;
+  border-radius: 15px;
+  background-image: url("/Users/dieterstach/Desktop/Coding_Projects/Realm_6/Resources/images/cover.jpg");
+  background-size: cover;
+  color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+  font-size: 50px;
 }
 
 .dropdown {
