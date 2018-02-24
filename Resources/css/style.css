@@ -14,10 +14,15 @@ body {
   background-size: cover;
   color: white;
   -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.5px;
   font-family: Raleway;
   font-size: 50px;
   font-weight: bold;
+  margin-bottom: 0;
+}
+
+#nav-bar {
+  margin-top: 4px;
 }
 
 .dropdown {
@@ -26,6 +31,7 @@ body {
     background-color: black;
     color: gold;
     padding: 20px 30px;
+    border-radius: 5px;
 }
 
 .dropdown a {
@@ -45,4 +51,8 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+h1 {
+  margin-bottom: 4px;
 }
