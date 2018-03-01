@@ -9,7 +9,7 @@ body {
 
 #top{
   padding-top: 200px;
-  background-image: url("/Users/dieterstach/Desktop/Coding_Projects/Realm_6/Resources/images/cover.jpg");
+  background-image: url("https://raw.githubusercontent.com/dieterstach/Realm_6/master/Resources/images/cover.jpg");
   background-size: cover;
   color: gold;
   -webkit-text-stroke-color: black;
