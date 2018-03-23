@@ -7,10 +7,21 @@ body {
   background-color: gray;
 }
 
+.cover {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.cover img {
+  border-radius: 0.5rem;
+}
+
 #top{
-  padding-top: 200px;
-  background-image: url("https://raw.githubusercontent.com/dieterstach/Realm_6/master/Resources/images/cover.jpg");
-  background-size: cover;
   color: gold;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 0.1px;
@@ -37,6 +48,8 @@ body {
 }
 
 #footer {
+  position: relative;
+  top: 25rem;
 }
 
 .overview {
