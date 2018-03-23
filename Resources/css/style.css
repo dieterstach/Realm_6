@@ -48,8 +48,10 @@ body {
 }
 
 #footer {
-  position: relative;
-  top: 25rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .overview {
@@ -95,12 +97,14 @@ body {
   font-family: Enriqueta;
   color: gold;
   background-color: black;
-  margin-bottom: 2px;
+  margin-bottom: 0;
   border-radius: 10px;
 }
 
 .copyright {
   font-size: 12px;
+  background-color: gray;
+  margin-bottom: 2px;
   margin: 0;
 }
 
