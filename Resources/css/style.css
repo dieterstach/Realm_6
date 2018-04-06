@@ -4,7 +4,7 @@ body {
   font-family: Helvetica;
   font-weight: lighter;
   text-align: center;
-  background-color: gray;
+  background-color: black;
 }
 
 .cover {
@@ -69,9 +69,16 @@ body {
     display: inline-block;
     background-color: black;
     color: gold;
+    transition-property: background-color;
+    transition-duration: 1s;
     padding: 20px 30px;
     border-radius: 5px;
     margin: 0 1px;
+}
+
+.dropdown:hover {
+  background-color: gold;
+  color: black;
 }
 
 .dropdown a {
@@ -79,14 +86,24 @@ body {
   text-decoration: none;
 }
 
+.dropdown a:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: black;
+    color: gold;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
+}
+
+.dropdown-content p {
+  border-bottom: 1px solid gold;
 }
 
 .dropdown:hover .dropdown-content {
@@ -94,7 +111,7 @@ body {
 }
 
 .bottom-banner {
-  font-family: Enriqueta;
+  font-family: Enriqueta, Helvetica, serif;
   color: gold;
   background-color: black;
   margin-bottom: 0;
@@ -103,7 +120,8 @@ body {
 
 .copyright {
   font-size: 12px;
-  background-color: gray;
+  background-color: black;
+  color: gold;
   margin-bottom: 2px;
   margin: 0;
 }
