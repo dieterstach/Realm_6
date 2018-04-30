@@ -7,6 +7,20 @@ body {
   background-color: black;
 }
 
+
+
+
+/*Top*/
+.title{
+  color: gold;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  font-family: Enriqueta, serif;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 .cover {
   position: fixed;
   top: 0;
@@ -21,50 +35,21 @@ body {
   border-radius: 0.5rem;
 }
 
-#top{
-  color: gold;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 0.1px;
-  font-family: Enriqueta;
-  font-size: 50px;
-  font-weight: bold;
-  margin-bottom: 0;
+h1 {
+  margin-bottom: 4px;
 }
 
-#nav-bar {
+
+
+/*Nav-Bar*/
+nav {
   margin-top: 4px;
   display: flex;
   justify-content: center;
 }
 
-#origin {
-  margin: auto;
-  font-weight: bold;
-  background-color: darkgray;
-  border-radius: 25px;
-  width: 300px;
-  height: 250px;
-  padding: 5px 20px;
-}
-
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.overview {
-  text-align: center;
-}
-
-.open-line {
-  font-family: cursive;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.dropdown {
+.dropdown a,
+.home a {
     position: relative;
     display: inline-block;
     background-color: black;
@@ -74,11 +59,14 @@ body {
     padding: 20px 30px;
     border-radius: 5px;
     margin: 0 1px;
+    text-decoration: none;
 }
 
-.dropdown:hover {
+.dropdown a:hover,
+.home a:hover {
   background-color: gold;
   color: black;
+  text-decoration: none;
 }
 
 .dropdown a {
@@ -96,18 +84,55 @@ body {
     position: absolute;
     background-color: black;
     color: gold;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    padding: 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0;
     z-index: 1;
 }
 
-.dropdown-content p {
-  border-bottom: 1px solid gold;
+.dropdown-content a {
+  /*width: 100%;*/
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/*Overview*/
+#origin {
+  margin: auto;
+  font-weight: bold;
+  background-color: darkgray;
+  border-radius: 25px;
+  width: 300px;
+  height: 250px;
+  padding: 5px 20px;
+}
+
+.overview {
+  text-align: center;
+}
+
+.open-line {
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+/*Footer*/
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .bottom-banner {
@@ -124,8 +149,4 @@ body {
   color: gold;
   margin-bottom: 2px;
   margin: 0;
-}
-
-h1 {
-  margin-bottom: 4px;
 }
