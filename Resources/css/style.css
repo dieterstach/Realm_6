@@ -84,21 +84,25 @@ nav {
     position: absolute;
     background-color: black;
     color: gold;
+    width: 200px;
     padding: 0;
     border: 1px solid gray;
     border-radius: 5px;
     margin: 0;
+    overflow: hidden;
     z-index: 1;
 }
 
 .dropdown-content a {
-  /*width: 100%;*/
+    width: 200px;
+    margin: 0;
 }
 
 .dropdown:hover .dropdown-content {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: inherit;
 }
 
 
